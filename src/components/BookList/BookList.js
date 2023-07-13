@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import AddBook from './AddBook';
-import './books.css';
+import Book from './Book';
 
-function Books() {
+function BookList() {
   const [books, setBooks] = useState([
     {
       id: 1,
@@ -32,18 +32,7 @@ function Books() {
   return (
     <>
       {books.map((book) => (
-        <div className="book-card" key={book.id}>
-          <div className="left-detail">
-            <p>{book.category}</p>
-            <h3>{book.title}</h3>
-            <p>{book.author}</p>
-            <div className="book-card-buttons">
-              <button type="button" onClick={() => handleDelete(book.id)}>
-                Remove
-              </button>
-            </div>
-          </div>
-        </div>
+        <Book book={book} handleDelete={handleDelete} key={book.id} />
       ))}
       <hr />
       <AddBook />
@@ -51,4 +40,4 @@ function Books() {
   );
 }
 
-export default Books;
+export default BookList;
