@@ -8,8 +8,8 @@ nav {
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
   font-family: "Montserrat", sans-serif;
   background-color: transparent;
-  position: relative; /* Add this line */
-  z-index: 2; /* Add this line */
+  position: relative;
+  z-index: 2;
 }
 
 .main-heading {
