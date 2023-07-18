@@ -29,10 +29,10 @@ export const booksSlice = createSlice({
 
   reducers: {
     addBook: (state, action) => {
-      state.totalBooks.push(action.payload);
+      state.totalBooks = [...state.totalBooks, action.payload];
     },
     deleteBook: (state, action) => {
-      state.totalBooks = state.totalBooks.filter((book) => book.id !== action.payload);
+      state.totalBooks = state.totalBooks.filter((book) => book.item_id !== action.payload);
     },
   },
 });

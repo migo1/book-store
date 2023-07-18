@@ -5,11 +5,6 @@ import Book from './Book';
 function BookList() {
   const books = useSelector((state) => state.books.totalBooks);
 
-  // const handleDelete = (id) => {
-  //   const updatedBooks = [...books].filter((book) => book.id !== id);
-  //   setBooks(updatedBooks);
-  // };
-
   return (
     <>
       {books.map((book) => (
