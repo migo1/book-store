@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addBook } from '../../redux/books/booksSlice';
 
 function AddBook() {
@@ -8,6 +8,7 @@ function AddBook() {
   const [bookCategory, setCategory] = useState('');
 
   const dispatch = useDispatch();
+  const checkStatus = useSelector((state) => state.books.status);
 
   const handleAddBook = (e) => {
     e.preventDefault();
@@ -20,9 +21,11 @@ function AddBook() {
         category: bookCategory,
       };
       dispatch(addBook(newBook));
-      setTitle('');
-      setAuthor('');
-      setCategory('');
+      if (checkStatus === 'succeeded') {
+        setTitle('');
+        setAuthor('');
+        setCategory('');
+      }
     }
   };
 
@@ -54,7 +57,7 @@ function AddBook() {
           <option value="Fiction">Fiction</option>
           <option value="Nonfiction">Nonfiction</option>
         </select>
-        <button type="submit">ADD BOOK</button>
+        <button type="submit" disabled={checkStatus === 'loading'}>ADD BOOK</button>
       </form>
     </div>
   );
