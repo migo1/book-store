@@ -8,10 +8,10 @@ function Book({ book }) {
   const dispatch = useDispatch();
 
   const handleDelete = (id) => {
-    dispatch(deleteBook(id));
+    dispatch(deleteBook({ item_id: id }));
   };
   return (
-    <div className="book-card">
+    <div className="book-card" key={book.item_id}>
       <div className="left-detail">
         <p>{book.category}</p>
         <h3>{book.title}</h3>
