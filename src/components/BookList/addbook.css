@@ -43,33 +43,32 @@ input {
   border-radius: 3px;
 }
 
-@media screen and (max-width:1835px) {
-    input {
-        margin-right: 2%;
-    }
+@media screen and (max-width: 1835px) {
+  input {
+    margin-right: 2%;
+  }
 
-    .dropdown {
-        margin-right: 2%;
-    }
-
+  .dropdown {
+    margin-right: 2%;
+  }
 }
 
-@media screen and (max-width:1776px) {
-   input {
-        margin-right: 1%;
-    }
+@media screen and (max-width: 1776px) {
+  input {
+    margin-right: 1%;
+  }
 
-    .dropdown {
-        margin-right: 1%;
-    }
+  .dropdown {
+    margin-right: 1%;
+  }
 }
 
-@media screen and (max-width:1721px) {
-   input {
-        margin-right: 0.5%;
-    }
+@media screen and (max-width: 1721px) {
+  input {
+    margin-right: 0.5%;
+  }
 
-    .dropdown {
-        margin-right: 0.5%;
-    }
+  .dropdown {
+    margin-right: 0.5%;
+  }
 }
