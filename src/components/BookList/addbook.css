@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+
+.form-container {
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+  margin-bottom: 0.8%;
+}
+
+.book-form {
+  display: flex;
+  width: 100%;
+}
+
+input {
+  margin-right: 2%;
+  padding: 0.813rem 35.688rem 0.813rem 2rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+}
+
+.dropdown {
+  padding: 0.75rem 5rem 0.563rem 0.8rem;
+  margin-right: 2%;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.add-book {
+  border: none;
+  background-color: #379cf6;
+  color: #fff;
+  padding: 0.801rem 3rem 0.886rem 3rem;
+  border-radius: 3px;
+}

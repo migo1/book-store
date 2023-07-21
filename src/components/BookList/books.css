@@ -105,7 +105,7 @@
   background-color: transparent;
   height: 1.188rem;
   margin: 0.9rem 0.938rem 0.125rem 0;
-  font-family: RobotoSlab;
+  font-family: "Roboto Slab", serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -177,8 +177,8 @@
 }
 
 hr {
-   border: none;
-    height: 1px; /* Set the height of the hr line */
-    background-color: #dbdbdb;
-    margin: 2.5rem 0.063rem 1.813rem 0;
+  border: none;
+  height: 1px; /* Set the height of the hr line */
+  background-color: #dbdbdb;
+  margin: 2.5rem 0.063rem 1.813rem 0;
 }

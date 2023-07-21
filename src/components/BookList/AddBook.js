@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addBook } from '../../redux/books/booksSlice';
+import './addbook.css';
 
 function AddBook() {
   const [bookTitle, setTitle] = useState('');
@@ -31,7 +32,7 @@ function AddBook() {
 
   return (
     <div className="form-container">
-      <h3>ADD NEW BOOK</h3>
+      <h3 className="form-title">ADD NEW BOOK</h3>
       <form className="book-form" onSubmit={handleAddBook}>
         <input
           placeholder="Book title"
@@ -40,24 +41,26 @@ function AddBook() {
         />
         <select
           name="author"
+          className="dropdown"
           value={bookAuthor}
           onChange={(e) => setAuthor(e.target.value)}
         >
-          <option value="">-- Select Author --</option>
+          <option value=""> Author </option>
           <option value="Suzzane Collins">Suzzane Collins</option>
           <option value="Frank Hebert">Frank Hebert</option>
           <option value="Robert Greene">Robert Greene</option>
         </select>
         <select
           name="category"
+          className="dropdown"
           value={bookCategory}
           onChange={(e) => setCategory(e.target.value)}
         >
-          <option value="">-- Select Category --</option>
+          <option value="">Select Category </option>
           <option value="Fiction">Fiction</option>
           <option value="Nonfiction">Nonfiction</option>
         </select>
-        <button type="submit" disabled={checkStatus === 'loading'}>ADD BOOK</button>
+        <button type="submit" disabled={checkStatus === 'loading'} className="add-book">ADD BOOK</button>
       </form>
     </div>
   );
