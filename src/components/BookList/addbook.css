@@ -22,15 +22,15 @@
 }
 
 input {
-  margin-right: 2%;
+  margin-right: 3%;
   padding: 0.813rem 35.688rem 0.813rem 2rem;
   border: solid 1px #e8e8e8;
   border-radius: 4px;
 }
 
 .dropdown {
-  padding: 0.75rem 5rem 0.563rem 0.8rem;
-  margin-right: 2%;
+  padding: 0.75rem 5rem 0.563rem 3rem;
+  margin-right: 3%;
   border: solid 1px #e8e8e8;
   background-color: #fff;
   border-radius: 4px;
@@ -40,6 +40,14 @@ input {
   border: none;
   background-color: #379cf6;
   color: #fff;
-  padding: 0.801rem 3rem 0.886rem 3rem;
+  padding: 0.801rem 5rem 0.886rem 5rem;
   border-radius: 3px;
+}
+
+.default-author {
+    color: #888;
+}
+
+.default-category {
+    color: #888;
 }
