@@ -13,10 +13,11 @@ function Book({ book }) {
   return (
     <div className="book-card" key={book.item_id}>
       <div className="left-detail">
-        <p>{book.category}</p>
-        <h3>{book.title}</h3>
-        <p>{book.author}</p>
+        <p className="book-category">{book.category}</p>
+        <h3 className="book-title">{book.title}</h3>
+        <p className="book-author">{book.author}</p>
         <div className="book-card-buttons">
+          <button type="button">Comments</button>
           <button
             type="button"
             key={book.item_id}
@@ -27,6 +28,22 @@ function Book({ book }) {
           >
             Remove
           </button>
+          <button type="button">Edit</button>
+        </div>
+      </div>
+      <div className="right-detail">
+        <div className="book-progress">
+          <div className="circle" />
+          <div className="circleDetails">
+            <p className="percent">64%</p>
+            <p className="status">Completed</p>
+          </div>
+        </div>
+        <div className="vertical-border" />
+        <div className="chapter-details">
+          <p className="current-chapter">CURRENT CHAPTER</p>
+          <p className="chapter">Chapter 17</p>
+          <button type="button" className="update">UPDATE PROGRESS</button>
         </div>
       </div>
     </div>
